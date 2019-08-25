@@ -1,18 +1,30 @@
 #include<iostream>
 using namespace std;
-int main()
-	{ int n;
-	cin>>n;
- int sum(int n);
-	int r=sum(n);
-	cout<<r;
-	return 0;
-	}
-int sum(int n)
+int multi(int a[],int n)
+        {
+		
 
-{
-	if(n==0)
+                for(int j=0;j<n;j++)
+		{              
+		       	cout<<(a[j]*2)<<"\t";
+		}
+               /* for(i=0;i<n;i++)
+                        cout<<a[i];*/
 		return 0;
-	else 
- 		return(n%10+sum(n/10));
+        }
+
+
+int main()
+{
+	int n;
+	cin>>n;
+	    int a[n];
+
+	for(int i=0;i<n;i++)
+	{	
+		cin>>a[i];
+	}	
+	multi(a,n);
+	return 0;
 }
+
