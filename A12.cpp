@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//find min ,max,second min,second max
 int sort(int a[],int n)
 
 {
@@ -22,7 +23,7 @@ int sort(int a[],int n)
 int main()
 {       int n;
         cin>>n;
-        int a[n];
+        int a[100];
         cout<<"Enter elements:";
         for(int i=0;i<n;i++)
         {
